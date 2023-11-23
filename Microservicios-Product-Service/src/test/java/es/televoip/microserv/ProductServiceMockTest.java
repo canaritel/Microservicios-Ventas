@@ -18,7 +18,7 @@ import es.televoip.microserv.service.ProductServiceImpl;
 @DirtiesContext(classMode = DirtiesContext.ClassMode.BEFORE_EACH_TEST_METHOD) // indicará al marco de pruebas que debe reinicializar el contexto de la aplicación después de cada prueba
 @SpringBootTest
 @TestPropertySource(locations = "classpath:application-test.yml")
-public class ProductServiceMockTest {
+class ProductServiceMockTest {
 	
 	@Mock
 	private ProductRepository productRepository;
@@ -52,13 +52,13 @@ public class ProductServiceMockTest {
 	}
 	
 	@Test
-	public void whenValidGetID_ThenReturnProduct() {
+	void whenValidGetID_ThenReturnProduct() {
 		Product found = productService.getProduct(5L);
 		Assertions.assertThat(found.getName()).isEqualTo("computer");
 	}
 	
 	@Test
-	public void whenValidUpdateStock_ThenReturnNewStock() {
+	void whenValidUpdateStock_ThenReturnNewStock() {
 		Product newStock = productService.updateStock(5L, Double.parseDouble("8"));
 		Assertions.assertThat(newStock.getStock()).isEqualTo(13);
 	}

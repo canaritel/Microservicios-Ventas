@@ -16,7 +16,7 @@ import es.televoip.microserv.entity.Product;
 
 @DirtiesContext(classMode = DirtiesContext.ClassMode.BEFORE_EACH_TEST_METHOD) // indicará al marco de pruebas que debe reinicializar el contexto de la aplicación después de cada prueba
 @DataJpaTest(properties = "spring.config.location=classpath:application-test.yml")
-public class ProductRepositoryMockTest {
+class ProductRepositoryMockTest {
 	
 	@Autowired
 	private ProductRepository productRepository;
@@ -40,7 +40,7 @@ public class ProductRepositoryMockTest {
 	
 			
 	@Test
-	public void whenFindByCategory_thenReturnListProduct() {
+	void whenFindByCategory_thenReturnListProduct() {
 				
 		Product product01 = Product.builder()
 				.id(5L) // Generate a unique ID
@@ -59,7 +59,8 @@ public class ProductRepositoryMockTest {
 	    
 	    System.out.println(founds.toString());
 
-	    Assertions.assertThat(founds.size()).isEqualTo(3);
+	    //Assertions.assertThat(founds.size()).isEqualTo(3);
+	    Assertions.assertThat(founds).hasSize(3);
 	}
 		
 	private void insertCategoryIfNotExists(long id, String name) {

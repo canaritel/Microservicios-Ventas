@@ -67,7 +67,7 @@ public class InvoiceController {
 		log.info("Fetching & Deleting Invoice with id {}", id);
 		Invoice invoice = invoiceService.getInvoice(id);
 
-		invoice = invoiceService.deleteInvoice(id);
+		invoiceService.deleteInvoice(id);
 		return ResponseEntity.ok(invoice);
 	}
 
