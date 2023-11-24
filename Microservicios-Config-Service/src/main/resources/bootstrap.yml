@@ -10,6 +10,7 @@ spring:
           searchPaths: Microservicios-Config-Data
           username: ${GIT_USER}
           password: ${GIT_PASSWORD}
+        bootstrap: true  
   security:
     user:
       name: root
