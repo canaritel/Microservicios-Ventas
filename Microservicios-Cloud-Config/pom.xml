@@ -11,7 +11,7 @@
 	<groupId>es.televoip.es</groupId>
 	<artifactId>config-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Microservicios-Cloud-Config</name>
+	<name>Microservicios-Config-Service</name>
 	<description>Microsercios Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
