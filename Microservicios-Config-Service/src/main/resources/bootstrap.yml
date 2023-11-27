@@ -8,12 +8,12 @@ spring:
     config:
       server:
         git:
-          default-label: Microservicios-Config-Service
+          #default-label: Microservicios-Config-Service
           uri: https://github.com/canaritel/Microservicios-Ventas.git
           search-paths: Microservicios-Config-Data
           username: ${GIT_USER}
           password: ${GIT_PASSWORD}
-          #default-label: "main"
+          default-label: "main"
         bootstrap: true
   application:
     name: Microservicios-Config-Service
