@@ -15,7 +15,6 @@
 	<description>Microsercios Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
-		<spring-cloud.version>2021.0.8</spring-cloud.version>
 	</properties>
 	<dependencies>
 
@@ -62,19 +61,19 @@
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<!-- Para temas de acentoa y tildes -->
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
 		</dependency>
-			
+
 		<!-- validadciones -->
 		<dependency>
 			<groupId>javax.validation</groupId>
@@ -90,8 +89,17 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<optional>true</optional>
 		</dependency>
+
+		<!-- Librería para Microservicios -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-config</artifactId>
+			<version>3.1.8</version>
+		</dependency>
+
 	</dependencies>
 
+	<!--
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -103,7 +111,7 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-
+-->
 	<build>
 		<plugins>
 			<plugin>
