@@ -26,8 +26,7 @@ El proyecto está organizado en varias carpetas, cada una con un propósito espe
 - Spring Boot 2.7
 - Java 11
 - Base de Datos MariaDB
-
-(Imagen con Postman, indicando URL y puerto)
+- Imagen con Postman, indicando URL y puerto
 ![image](https://github.com/canaritel/Microservicios-Ventas/assets/57302177/409ed7b9-109f-4809-95b5-87bac09293f9)
 
 ---
@@ -75,7 +74,6 @@ El proyecto Shopping-Service se organiza en varias carpetas, cada una con un pro
 - Spring Boot 2.7
 - Java11
 - Base de Datos MariaDB
-
-(Imagen con Postman, indicando URL y puerto)
+- Imagen con Postman, indicando URL y puerto
 ![image](https://github.com/canaritel/Microservicios-Ventas/assets/57302177/5ff9bc2f-8a6a-4284-8b31-e32686cb8415)
 
