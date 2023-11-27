@@ -13,7 +13,7 @@ spring:
           search-paths: Microservicios-Config-Data
           username: ${GIT_USER}
           password: ${GIT_PASSWORD}
-        #bootst
+        bootstrap: true
   application:
     name: Microservicios-Config-Service
 
