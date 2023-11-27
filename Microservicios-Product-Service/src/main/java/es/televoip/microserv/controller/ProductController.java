@@ -27,6 +27,11 @@ public class ProductController {
 
 	private final ProductService productService;
 
+	/**
+	 * Método para listas todos los productos
+	 * 
+	 * @return
+	 */
 	@GetMapping
 	public ResponseEntity<List<Product>> listProduct() {
 		List<Product> products = productService.listAllProduct();
@@ -38,6 +43,12 @@ public class ProductController {
 		return ResponseEntity.ok(products);
 	}
 
+	/**
+	 * Método para listar filtrando por categoria los productos
+	 * 
+	 * @param categoryId
+	 * @return
+	 */
 	@GetMapping("/filter")
 	public ResponseEntity<List<Product>> listProductFilter(
 			@RequestParam(name = "categoryId", required = false) Long categoryId) {
@@ -59,6 +70,12 @@ public class ProductController {
 		return ResponseEntity.ok(products);
 	}
 
+	/**
+	 * Método para obtener un producto
+	 * 
+	 * @param id
+	 * @return
+	 */
 	@GetMapping(value = "/{id}")
 	public ResponseEntity<Product> getProduct(@PathVariable("id") Long id) {
 		log.info("Fetching Product with id {}", id);
@@ -67,6 +84,12 @@ public class ProductController {
 		return ResponseEntity.ok(product);
 	}
 
+	/**
+	 * Método para crear el producto
+	 * 
+	 * @param product
+	 * @return
+	 */
 	@PostMapping // Recomendado según el caso crear un mecanimo de Idempotencia!!!
 	public ResponseEntity<Product> createProduct(@Valid @RequestBody Product product) {
 		log.info("Creating Product : {}", product);
@@ -75,6 +98,13 @@ public class ProductController {
 		return ResponseEntity.status(HttpStatus.CREATED).body(productCreate);
 	}
 
+	/**
+	 * Método para actualizar un producto
+	 * 
+	 * @param id
+	 * @param product
+	 * @return
+	 */
 	@PutMapping(value = "/{id}")
 	public ResponseEntity<Product> updateProduct(@PathVariable("id") Long id, @Valid @RequestBody Product product) {
 		log.info("Updating Product with id {}", id);
@@ -84,6 +114,12 @@ public class ProductController {
 		return ResponseEntity.ok(productUpdate);
 	}
 
+	/**
+	 * Método para borrar un producto
+	 * 
+	 * @param id
+	 * @return
+	 */
 	@DeleteMapping(value = "/{id}")
 	public ResponseEntity<Product> deleteProduct(@PathVariable("id") Long id) {
 		log.info("Fetching & Deleting Product with id {}", id);
@@ -92,6 +128,13 @@ public class ProductController {
 		return ResponseEntity.ok(productDelete);
 	}
 
+	/**
+	 * Método para añadir stock a un producto
+	 * 
+	 * @param id
+	 * @param quantity
+	 * @return
+	 */
 	@GetMapping(value = "/stock/{id}")
 	public ResponseEntity<Product> stockProduct(@PathVariable("id") Long id,
 			@RequestParam(name = "quantity", required = true) Double quantity) {
