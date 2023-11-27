@@ -9,8 +9,8 @@ spring:
       password: s3cr3t
       
   config:      
-    #import: Microservicios-Config-Service:http://localhost:8081
-    import: Microservicios-Config-Service:http://localhost:8081/Microservicios-Config-Service/Microservicios-Shooping-Service
+    import: Microservicios-Config-Service:http://localhost:8081
+    #import: Microservicios-Config-Service:http://localhost:8081/Microservicios-Config-Service/Microservicios-Shooping-Service
  
  
 
