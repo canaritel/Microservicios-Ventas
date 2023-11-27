@@ -1,6 +1,6 @@
 # Microservicios-Ventas
 Proyecto de Microservicios base con Java 11 y Spring Boot 2.7.x
-* Cada Microservico funciona de forma independiente y se puede testar mediando Postamn.
+* Cada Microservico funciona de forma independiente y se puede testar mediando Postman.
 * No se ha realizado la capa frontend
 
 ## Microservicios-Config-Data
