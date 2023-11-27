@@ -1,5 +1,4 @@
 #Application Configuration
-
 server:
   port: 8093
   include-message: always
@@ -22,6 +21,4 @@ spring:
     init:
       platform: mariadb
       mode: always
-  logging:
-    pattern:
-      console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
+  
