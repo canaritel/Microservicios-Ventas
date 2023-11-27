@@ -10,14 +10,14 @@ spring:
   cloud:
     config:
       server:
+        #bootstrap: true
         git:
           uri: https://github.com/canaritel/Microservicios-Ventas.git
           searchPaths: Microservicios-Config-Data
           username: ${GIT_USER}
           password: ${GIT_PASSWORD}
           default-label: "main"
-        #bootstrap: true
-  
+          
   security:
     user:
       name: root
