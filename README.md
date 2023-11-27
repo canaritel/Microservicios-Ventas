@@ -16,9 +16,6 @@ Este microservicio gestiona todo lo relacionado con los clientes. Incluye funcio
 
 
 ## Microservicios-Product-Service
-Este servicio se encarga de la gestión de productos. Incluye funcionalidades como el catálogo de productos, información detallada del producto, gestión de inventario, y precios. Es esencial para mantener actualizada la información del producto y asegurarse de que los clientes tengan acceso a la información más reciente y precisa.
-
-### Descripción General
 Product-Service es un microservicio diseñado para manejar todas las operaciones relacionadas con productos en un sistema de comercio electrónico. Este servicio es responsable de la gestión de datos de productos, incluyendo su creación, actualización, recuperación y eliminación. Está construido con Spring Boot, lo que facilita su integración con otros microservicios en la arquitectura.
 
 ### Estructura del Proyecto
