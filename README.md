@@ -27,6 +27,7 @@ El proyecto está organizado en varias carpetas, cada una con un propósito espe
 - Java 11
 - Base de Datos MariaDB
 
+(Imagen uso con Postman, indicando URL y puerto)
 ![image](https://github.com/canaritel/Microservicios-Ventas/assets/57302177/409ed7b9-109f-4809-95b5-87bac09293f9)
 
 ---
