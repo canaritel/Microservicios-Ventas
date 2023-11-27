@@ -15,6 +15,7 @@
 	<description>Microsercios Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
+		<spring-cloud.version>2021.0.8</spring-cloud.version>
 	</properties>
 	<dependencies>
 
@@ -39,11 +40,14 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		<!--
+
+		<!-- Librería para Microservicios -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-config</artifactId>
 		</dependency>
+
+		<!--
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
@@ -89,17 +93,9 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<optional>true</optional>
 		</dependency>
-
-		<!-- Librería para Microservicios -->
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-config</artifactId>
-			<version>3.1.8</version>
-		</dependency>
-
 	</dependencies>
 
-	<!--
+	<!-- Configuración para Microservicios -->
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -111,7 +107,7 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
--->
+
 	<build>
 		<plugins>
 			<plugin>
