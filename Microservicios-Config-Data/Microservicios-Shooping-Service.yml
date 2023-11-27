@@ -1,12 +1,9 @@
-logging:
-  level:
-    org:
-      hibernate: warn
-      springframework:
-        web: info
-    root: info
+#Application Configuration
+
 server:
   port: 8093
+  include-message: always
+  include-binding-errors: always
 spring:
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
@@ -25,3 +22,6 @@ spring:
     init:
       platform: mariadb
       mode: always
+  logging:
+    pattern:
+      console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
