@@ -15,6 +15,7 @@ Este microservicio gestiona todo lo relacionado con los clientes. Incluye funcio
 ![image](https://github.com/canaritel/Microservicios-Ventas/assets/57302177/409ed7b9-109f-4809-95b5-87bac09293f9)
 
 
+
 ## Microservicios-Product-Service
 Product-Service es un microservicio diseñado para manejar todas las operaciones relacionadas con productos en un sistema de comercio electrónico. Este servicio es responsable de la gestión de datos de productos, incluyendo su creación, actualización, recuperación y eliminación. Está construido con Spring Boot, lo que facilita su integración con otros microservicios en la arquitectura.
 
@@ -38,6 +39,7 @@ El proyecto está organizado en varias carpetas, cada una con un propósito espe
 * Imagen uso con Postman, indicando URL y puerto:
 
 ![image](https://github.com/canaritel/Microservicios-Ventas/assets/57302177/971c4e39-a58c-44b4-83d7-0928c8cd29a5)
+
 
 
 ## Microservicios-Shooping-Service
