@@ -27,7 +27,7 @@ El proyecto está organizado en varias carpetas, cada una con un propósito espe
 - Java 11
 - Base de Datos MariaDB
 
-(Imagen uso con Postman, indicando URL y puerto)
+(Imagen con Postman, indicando URL y puerto)
 ![image](https://github.com/canaritel/Microservicios-Ventas/assets/57302177/409ed7b9-109f-4809-95b5-87bac09293f9)
 
 ---
@@ -59,7 +59,23 @@ El proyecto está organizado en varias carpetas, cada una con un propósito espe
 ---
 
 ## Microservicios-Shooping-Service
-Este microservicio maneja todo lo relacionado con el proceso de compra y carrito de compras. Permite a los clientes agregar productos a su carrito, gestionar los artículos en el carrito, realizar pedidos, y procesar pagos. Es un componente clave para facilitar una experiencia de compra fluida y eficiente.
+Shopping-Service es un microservicio diseñado para gestionar las operaciones relacionadas con la experiencia de compra en un sistema de comercio electrónico. Este servicio se encarga de manejar aspectos como el carrito de compras, el proceso de checkout, y la interacción con el catálogo de productos. Construido con Spring Boot, el Shopping-Service se integra a la perfección con otros microservicios, formando una solución robusta y escalable para comercio electrónico.
 
+### Estructura del Proyecto
+El proyecto Shopping-Service se organiza en varias carpetas, cada una con un propósito específico:
+
+* config: Contiene configuraciones del microservicio, incluidas las relacionadas con conexiones de base de datos, seguridad y otras integraciones.
+* controller: Alberga controladores que manejan las solicitudes HTTP, facilitando la interacción entre la lógica de negocio y los usuarios o servicios.
+* entity: Define las entidades que representan los modelos de datos. Estas entidades se mapean a las tablas en la base de datos y se utilizan para operaciones CRUD.
+* exceptions: Incluye clases para manejar excepciones personalizadas, mejorando la claridad y especificidad de las respuestas de error.
+* repository: Contiene interfaces JPA para la manipulación de datos, simplificando las interacciones con la base de datos.
+* service: Encapsula la lógica de negocio principal, siendo utilizadas por los controladores para realizar operaciones relevantes.
+
+### Tecnologías Utilizadas
+- Spring Boot 2.7
+- Java11
+- Base de Datos MariaDB
+
+(Imagen con Postman, indicando URL y puerto)
 ![image](https://github.com/canaritel/Microservicios-Ventas/assets/57302177/5ff9bc2f-8a6a-4284-8b31-e32686cb8415)
 
