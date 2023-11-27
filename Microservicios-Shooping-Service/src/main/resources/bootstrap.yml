@@ -7,6 +7,12 @@ spring:
       uri: http://localhost:8081
       username: root
       password: s3cr3t
+      
+  config:      
+    import: Microservicios-Config-Service:http://localhost:8081
+    #import: Microservicios-Config-Service:http://localhost:8081/Microservicios-Config-Service/Microservicios-Shooping-Service
+ 
+ 
 
 #logging:
 #  level:
