@@ -63,12 +63,18 @@ Shopping-Service es un microservicio diseñado para gestionar las operaciones re
 ### Estructura del Proyecto
 El proyecto Shopping-Service se organiza en varias carpetas, cada una con un propósito específico:
 
-* config: Contiene configuraciones del microservicio, incluidas las relacionadas con conexiones de base de datos, seguridad y otras integraciones.
-* controller: Alberga controladores que manejan las solicitudes HTTP, facilitando la interacción entre la lógica de negocio y los usuarios o servicios.
-* entity: Define las entidades que representan los modelos de datos. Estas entidades se mapean a las tablas en la base de datos y se utilizan para operaciones CRUD.
-* exceptions: Incluye clases para manejar excepciones personalizadas, mejorando la claridad y especificidad de las respuestas de error.
-* repository: Contiene interfaces JPA para la manipulación de datos, simplificando las interacciones con la base de datos.
-* service: Encapsula la lógica de negocio principal, siendo utilizadas por los controladores para realizar operaciones relevantes.
+* config: Contiene archivos de configuración para el microservicio. Esto incluye configuraciones para conexiones de base de datos, seguridad y otras integraciones necesarias.
+
+* controller: Alberga los controladores que manejan las solicitudes HTTP. Los controladores interactúan con la lógica de negocio y envían respuestas a las solicitudes de los usuarios o de otros servicios.
+
+* entity: Define las clases de entidad que representan los modelos de datos en la base de datos. Cada entidad corresponde a una tabla en la base de datos y es utilizada para operaciones CRUD (Crear, Leer, Actualizar, Eliminar).
+
+* exceptions: Incluye clases personalizadas para manejar diferentes tipos de excepciones. Estas clases ayudan a proporcionar respuestas de error más informativas y específicas.
+
+* repository: Contiene interfaces JPA para el acceso y manipulación de datos en la base de datos. Estos repositorios abstraen las operaciones de la base de datos y simplifican la interacción con los datos.
+
+* service: Almacena clases de servicio que encapsulan la lógica de negocio principal del microservicio. Estas clases son utilizadas por los controladores para realizar operaciones de negocio.
+
 
 ### Tecnologías Utilizadas
 - Spring Boot 2.7
