@@ -1,12 +1,7 @@
-logging:
-  level:
-    org:
-      hibernate: warn
-      springframework:
-        web: info
-    root: info
 server:
   port: 8092
+  include-message: always
+  include-binding-errors: always
 spring:
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver

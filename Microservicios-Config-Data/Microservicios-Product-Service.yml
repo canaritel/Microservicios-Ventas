@@ -1,12 +1,7 @@
-logging:
-  level:
-    org:
-      hibernate: warn
-      springframework:
-        web: info
-    root: info
 server:
   port: 8090
+  include-message: always
+  include-binding-errors: always
 spring:
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
@@ -15,12 +10,10 @@ spring:
     username: root
   jpa:
     database-platform: org.hibernate.dialect.MariaDBDialect
-    hibernate:
-      ddl-auto: update
-      #type:
-      #  json_format_mapper: com.howtodoinjava.CustomJacksonJsonFormatMapper
     show-sql: true
     open-in-view: true
+    hibernate:
+      ddl-auto: update
   mustache:
     check-template-location: false
   sql:
