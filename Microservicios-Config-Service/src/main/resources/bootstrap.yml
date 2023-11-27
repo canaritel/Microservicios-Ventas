@@ -10,7 +10,7 @@ spring:
         git:
           #default-label: Microservicios-Config-Service
           uri: https://github.com/canaritel/Microservicios-Ventas.git
-          search-paths: Microservicios-Config-Data
+          #search-paths: Microservicios-Config-Data
           searchPaths: Microservicios-Config-Data
           username: ${GIT_USER}
           password: ${GIT_PASSWORD}
