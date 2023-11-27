@@ -40,7 +40,7 @@ El proyecto está organizado en varias carpetas, cada una con un propósito espe
 
 ![image](https://github.com/canaritel/Microservicios-Ventas/assets/57302177/971c4e39-a58c-44b4-83d7-0928c8cd29a5)
 
-
+---
 
 ## Microservicios-Shooping-Service
 Este microservicio maneja todo lo relacionado con el proceso de compra y carrito de compras. Permite a los clientes agregar productos a su carrito, gestionar los artículos en el carrito, realizar pedidos, y procesar pagos. Es un componente clave para facilitar una experiencia de compra fluida y eficiente.
