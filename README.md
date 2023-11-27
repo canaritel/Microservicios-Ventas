@@ -1,6 +1,7 @@
 # Microservicios-Ventas
 Proyecto de Microservicios base con Java 11 y Spring Boot 2.7.x
 * Cada Microservico funciona de forma independiente y se puede testar mediando Postamn.
+* No se ha realizado la capa frontend
 
 ## Microservicios-Config-Data
 Este proyecto sirve como un repositorio centralizado para todas las configuraciones de los microservicios. Actúa como una fuente única de verdad para la configuración, asegurando la consistencia y facilitando la gestión y el mantenimiento de las configuraciones en un entorno de microservicios. Puede almacenar configuraciones como propiedades de aplicación, parámetros de entorno, y más.
