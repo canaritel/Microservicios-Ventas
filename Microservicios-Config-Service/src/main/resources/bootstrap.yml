@@ -9,10 +9,13 @@ spring:
       server:
         git:
           uri: https://github.com/canaritel/Microservicios-Ventas.git
-          searchPaths: Microservicios-Config-Data
+          search-paths: Microservicios-Config-Data
           username: ${GIT_USER}
           password: ${GIT_PASSWORD}
-        #bootstrap: true  
+        #bootst
+  application:
+    name: Microservicios-Config-Service
+
   security:
     user:
       name: root
