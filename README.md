@@ -18,6 +18,28 @@ Este microservicio gestiona todo lo relacionado con los clientes. Incluye funcio
 ## Microservicios-Product-Service
 Este servicio se encarga de la gestión de productos. Incluye funcionalidades como el catálogo de productos, información detallada del producto, gestión de inventario, y precios. Es esencial para mantener actualizada la información del producto y asegurarse de que los clientes tengan acceso a la información más reciente y precisa.
 
+### Descripción General
+Product-Service es un microservicio diseñado para manejar todas las operaciones relacionadas con productos en un sistema de comercio electrónico. Este servicio es responsable de la gestión de datos de productos, incluyendo su creación, actualización, recuperación y eliminación. Está construido con Spring Boot, lo que facilita su integración con otros microservicios en la arquitectura.
+
+### Estructura del Proyecto
+El proyecto está organizado en varias carpetas, cada una con un propósito específico:
+
+* config: Contiene archivos de configuración para el microservicio. Esto incluye configuraciones para conexiones de base de datos, seguridad y otras integraciones necesarias.
+
+* controller: Alberga los controladores que manejan las solicitudes HTTP. Los controladores interactúan con la lógica de negocio y envían respuestas a las solicitudes de los usuarios o de otros servicios.
+
+* entity: Define las clases de entidad que representan los modelos de datos en la base de datos. Cada entidad corresponde a una tabla en la base de datos y es utilizada para operaciones CRUD (Crear, Leer, Actualizar, Eliminar).
+
+* exceptions: Incluye clases personalizadas para manejar diferentes tipos de excepciones. Estas clases ayudan a proporcionar respuestas de error más informativas y específicas.
+
+* repository: Contiene interfaces JPA para el acceso y manipulación de datos en la base de datos. Estos repositorios abstraen las operaciones de la base de datos y simplifican la interacción con los datos.
+
+* service: Almacena clases de servicio que encapsulan la lógica de negocio principal del microservicio. Estas clases son utilizadas por los controladores para realizar operaciones de negocio.
+
+* DataInitializer.java: Clase utilizada para inicializar la base de datos con datos predeterminados en el arranque de la aplicación.
+
+* Imagen uso con Postman, indicando enlace y puerto:
+
 ![image](https://github.com/canaritel/Microservicios-Ventas/assets/57302177/971c4e39-a58c-44b4-83d7-0928c8cd29a5)
 
 
