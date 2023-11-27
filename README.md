@@ -35,7 +35,7 @@ El proyecto está organizado en varias carpetas, cada una con un propósito espe
 
 * DataInitializer.java: Clase utilizada para inicializar la base de datos con datos predeterminados en el arranque de la aplicación.
 
-* Imagen uso con Postman, indicando enlace y puerto:
+* Imagen uso con Postman, indicando URL y puerto:
 
 ![image](https://github.com/canaritel/Microservicios-Ventas/assets/57302177/971c4e39-a58c-44b4-83d7-0928c8cd29a5)
 
